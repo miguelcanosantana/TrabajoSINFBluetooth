@@ -1,17 +1,55 @@
-div.menu {
-  background-color:#0A3D91;
-  overflow: auto;
-  white-space: nowrap;
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
 }
 
-div.menu a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px;
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #2c2a4b;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(209, 209, 209);
+  padding: 16px;
   text-decoration: none;
 }
+ 
+.sidebar a.active {
+  background-color: rgb(15, 95, 216);
+  color: white;
+}
 
-div.menu a:hover {
-  background-color: rgb(46, 100, 185);
+.sidebar a:hover:not(.active) {
+  background-color: #3e3a6e;
+  color: white;
+  transition: background-color 0.25s;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 1366px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
 }
