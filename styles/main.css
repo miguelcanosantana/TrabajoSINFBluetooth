@@ -8,7 +8,6 @@ body {
   overflow: hidden;
   background-color:#0a3d91;  
   position: fixed;
-  top: 0;
   width: 100%;
 }
 
@@ -40,7 +39,8 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .navbar {width: 100%;}
+  /* Pone la barra de navegación abajo en el modo PC */
+  .navbar {width: 100%; bottom: 0;}
   .navbar a:not(:first-child) {display: none;}
   .navbar a.icon {
     float: right;
@@ -57,4 +57,9 @@ body {
     display: block;
     text-align: left;
   }
+}
+
+/* Pone la barra de navegación arriba en el modo móvil*/
+@media screen and (min-width: 600px) {
+  .navbar {top: 0;}
 }
