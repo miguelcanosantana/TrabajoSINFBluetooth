@@ -1,3 +1,4 @@
+/*----------------------------------------------------------------------------------------------*/
 /*Body*/
 body {
   margin-top: 0px;
@@ -5,6 +6,8 @@ body {
   font-family: 'Varela Round', sans-serif;
   background-color: #435ada;
 }
+
+/*----------------------------------------------------------------------------------------------*/
 /*Header*/
 header {position: relative;
   background-image: url("../images/header.png");
@@ -13,8 +16,10 @@ header {position: relative;
   height:200px;
   margin-top: 0px;
   margin-bottom: 0px;
+  
 }
 
+/*----------------------------------------------------------------------------------------------*/
 /*Navbar*/
 .navbar {
   overflow: hidden;
@@ -22,6 +27,7 @@ header {position: relative;
   position: fixed;
   width: 100%;
   margin-bottom: 0px;
+
 }
 
 .navbar a {
@@ -35,7 +41,6 @@ header {position: relative;
 }
 
 .navbar a:hover {
-  background-color:#093A90;
   transition: background-color 0.25s;
   color: rgb(255, 255, 255);
 }
@@ -54,9 +59,12 @@ header {position: relative;
   /* Pone la barra de navegación abajo en el smartphone */
   .navbar {width: 100%; bottom: 0;
            position: fixed;
+           border-radius: 20px 20px 20px 20px;
+           margin: auto;
+
           }
 
-  .navbar a{ font-size: 23px;
+  .navbar a{ font-size: 21x;
 
   }
   .navbar a:not(:first-child) {display: none;}
@@ -66,33 +74,55 @@ header {position: relative;
   }
   .navbar.responsive .icon {
     position: absolute;
-
     right: 0;
     bottom:0;
   }
   .navbar.responsive a {
     float: none;
     display: block;
-    text-align: left;
+    text-align: center;
   }
+
+  .navbar a.active { border-radius: 20px 20px 20px 20px;
+  }
+
   /*Margen 0 de body en móvil*/
   body {margin-left: 0px;
-        margin-right: 0px;}
+        margin-right: 0px;
+        margin-bottom: 80px;}
 
   header{background-size: cover;
          background-image: url("../images/small.png");
+         border-radius: 0px 0px 20px 20px;
         }
 }
 
 /* Pone la barra de navegación arriba en el modo pc*/
 @media screen and (min-width: 820px) {
   .navbar {top: 0;
-           position: sticky;}
+           position: sticky;
+           border-radius: 0px 0px 10px 10px;
+          }
+  .navbar a:hover {
+    border-radius: 10px 10px 0px 0px;
+    background-color:#435ADA;
+  }
+
+  .navbar a.active {
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .navbar a.active:hover {
+    background-color:#ed62ff;
+
+    color: black;
+  }
 
   /*Margen 10 de body en pc*/
   body {margin-left: 10px;
         margin-right: 10px;
        }
+       
 }
 
 @media screen and (max-width: 470px) {
@@ -102,18 +132,67 @@ header {position: relative;
   }
 
 }
-
+/*----------------------------------------------------------------------------------------------*/
 /*Recuadro Página Texto*/
-.recuadropagina {margin-top: 0px;
+.recuadropagina {
                  padding-left:16px;
-                 padding-top:0px;
                  background-color: rgb(23, 40, 70);
                  color: #c7c7c7;
                  font-size: 17px;
+                 border-radius: 10px;
                 }
 
 @media screen and (max-width: 820px) {
-  .recuadropagina {padding-bottom: 30px;
-                   font-size: 23px;      
+  .recuadropagina {padding-bottom: 0px;
+                   padding-top: 0px;
+                   margin-left: 10px;
+                   margin-right: 10px;
+                   font-size: 21px;   
+                   border-radius: 20px 20px 20px 20px;   
                   }
-}         
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/*Lista con botones*/
+
+.lista {
+  font-size: 25px;
+  text-align: center;
+  list-style: none;
+
+}
+
+.boton {
+  background-color: #0A3C91;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px 20px 20px 20px; 
+  font-size: 21px;
+  text-decoration: none; 
+}
+
+.boton:visited{color: white;
+}
+
+/*Pantalla Pc*/
+@media screen and (min-width: 820px) {
+  .boton{border-radius: 10px 10px 10px 10px; 
+         font-size: 17px;    
+        }
+  .boton:hover{background-color: #ed62ff;
+               color: black;
+               transition: background-color 0.25s;
+               transition: color 0.25s;
+
+  } 
+}
+
+
+
+/*Texto*/
+
+.texto{margin-left: 12px;
+       margin-right: 12px;
+}
