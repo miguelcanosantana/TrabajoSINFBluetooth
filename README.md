@@ -1,3 +1,5 @@
 # TrabajoSINFBluetooth
 Proyecto sobre Bluetooth. (Spanish Proyect about Bluetooth)
-https://miguelcanosantana.github.io/TrabajoSINFBluetooth/
+Versión definitiva: https://miguelcanosantana.github.io/TrabajoSINFBluetooth/
+(Los cambios pueden tardar en reflejarse)
+Versión actualizada al instante: https://miguelcanosantana.github.io/TrabajoSINFBluetooth/?version=f36af92
