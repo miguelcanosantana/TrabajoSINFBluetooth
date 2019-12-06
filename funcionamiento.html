@@ -22,77 +22,58 @@
 
   <!-- NavBar -->
   <div class="navbar" id="myNavbar">
-    <a href="#intro" class="active">Introducción</a>
+    <a href="#intro">Introducción</a>
     <a href="#tipos" >Tipos y usos</a>
     <a href="#versiones">Versiones</a>
-    <a href="#funcionamiento">Funcionamiento</a>
+    <a href="#funcionamiento" class="active">Funcionamiento</a>
     <a href="#marcas">Marcas y Compra</a>
     <a href="#about">About</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
-  
-   <!-- Recuadro índice -->
-  <div class = "recuadropagina">
-    <p>
-      <div class = "lista">
-        <li> <br></li>
-        <li><a class = "boton"; href="#jump1">Introducción</a></li>
-        <li> <br></li>
-        <li><a class = "boton"; href="#jump2">Historia</a></li>
-        <li> <br> </li>
-      </div>
-
-    </p>
-
-  </div>
 
    <!-- Recuadro Contenido 1 -->
+   <br>
    <div class = "recuadropagina">
       <br>
-      <h1 class="titulo" id="jump1">Introducción</h1>
+      <h1 class="titulo" id="jump1">Funcionamiento</h1>
       <div class="texto">
         <p>
-          Bluetooth es un protocolo y tecnología de comunicación entre dispositivos de corto alcance.<br>
+          <li>El chip Bluetooth:</li>
           <br>
-          Gracias a dicha tecnología, se posibilita la transmisión tanto de voz como otros tipos de datos mediante radiofrecuencia en la banda ISM de los 2.4GHz.<br>
+          Para que un dispositivo sea compatible con Bluetooth debe tener el software adecuado,aparte debe tener un chip Bluetooth que disponga de una unidad transmisora, y otra receptora. <br>
           <br>
-          El objetivo de esta tecnología es:
-          <li>Eliminar el uso excesivo de cables, conectores y adaptadores.</li>
-          <li>Facilitar la comunicación entre equipos que soporten dicho estándar.</li>
-          <li>Poder crear pequeñas redes inalámbricas, con el fin de sincronizar datos entre dispositivos personales.</li>
-          <br>
-          <img class="imagentransparente" src="images/image1.png" alt="Dispositivos Bluetooth">
-          <br>
-          <div class="comentariocentrado">Al contrario que otras tecnologías de transmisión de datos, Bluetooth se enfoca en ser de bajo consumo, por lo que su velocidad de transferencia de datos también se queda reducida.</div>
+          En dispositivos móviles el driver suele venir incluido en el sistema operativo por parte del fabricante.
+          En portátiles y ordenadores puede ser que no venga incluido y haya que ir a la página del fabricante con el fin de poder instalarlo.<br>
           <br>
           <br>
+          <li>La conexión:</li>
+          <br>
+          Los dispositivos Bluetooth funcionan entre las bandas de los 2.402GHz y los 2.480GHz. Para poder identificarlos sin errores ni equivocaciones casa dispositivo cuenta con una dirección MAC de 48 bits.<br>
+          <br>
+          La conexión se puede iniciar en cualquier dispositivo. Este se vuelve “master”, y espera a los dispositivos “slaves”.
+          Entre todos ellos crean una red llamada “piconet” y seguido de ello hacen “pairing” o emparejamiento.<br>
+          <br>
+          En algunos casos para hacer emparejamiento se necesita un pin que proporcione uno de los 2 dispositivos.<br>
+          <br>
+          <br>
+          <li>Piconet:</li>
+          <br>
+          Es una red integrada como mucho por 8 dispositivos activos. Una piconet podría mantener en teoría hasta 200 dispositivos en modo inactivo.<br>
+          <br>
+          Un dispositivo puede estar registrado como slave en más de una piconet, pero solo puede funcionar como master en una.<br>
+          <br>
+          <br>
+          <li>El perfil Bluetooth:</li>
+          <br>
+          Cada chip Bluetooth viene con una pila o colección de protocolos, como si se tratasen de los controladores de un ordenador:<br>
+          <br>
+          <img class="imagenNOtransparente" src="images/tabla3.png" alt="Dispositivos Bluetooth">
+          <br>
+          <br>
+          
         </p>
       </div>
     </div>  
-
-   <!-- Recuadro Contenido 2 -->
-   <div class = "recuadropagina">
-      <br>
-      <h1 class="titulo" id="jump2">Historia</h1>
-      <div class="texto">
-        <p>
-          Bluetooth se convirtió en un estándar en 1998 gracias a 6 grandes empresas: Sony, Nokia, Intel, Toshiba, IBM y Ericsson; siendo Ericsson la primera que empezó su desarrollo.<br>
-          <br>
-          Las 6 empresas formaron un consorcio llamado: “Bluetooth Special Interest Group” (Bluetooth SIG).<br>
-          <br>
-          Las empresas Ericsson y Nokia son de origen escandinavo, por lo que influyó en la elección del nombre de esta tecnología.<br>
-          <br>
-          El nombre procede de un rey noruego y danés llamado “Harald Blåtand”, ya que su nombre traducido al inglés sería “Harald Bluetooth”.
-          Se le conoce por haber unificado las tribus danesas y haberlas convertido al cristianismo.<br>
-          Tiene cierta similitud con el ideal de usar la menor cantidad posible de cables y pasarse al bluetooth, por lo que Jim Kardach fue la persona que propuso tal nombre.<br>
-          <br>
-
-          <img class="imagenNOtransparente" src="images/image2.jpg" alt="Dispositivos Bluetooth">
-          <br>
-          <div class="comentariocentrado">Para el logo de Bluetooth se usan combinadas las runas Hagall ᚼ y Berkana ᛒ.</div>
-          <br>
-        </p>
-      </div>
     </div>
 
 <footer>
