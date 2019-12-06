@@ -16,6 +16,7 @@ header {position: relative;
   height:200px;
   margin-top: 0px;
   margin-bottom: 0px;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.486);
   
 }
 
@@ -23,10 +24,11 @@ header {position: relative;
 /*Navbar*/
 .navbar {
   overflow: hidden;
-  background-color:#0A3C91;  
+  background-color:#0A3A91;  
   position: fixed;
   width: 100%;
   margin-bottom: 0px;
+  box-shadow: 0px 10px 10px 0px  rgba(0, 0, 0, 0.486);
 
 }
 
@@ -144,7 +146,7 @@ header {position: relative;
                  margin-right: 15%;
                  padding-bottom: 0px;
                  padding-top: 0px;
-                 box-shadow: 4px 4px #ff62b870;
+                 box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.486);
                  
                 }
 
@@ -172,7 +174,7 @@ header {position: relative;
   padding: 14px 28px;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 20px 20px 20px 20px; 
+  border-radius: 20px; 
   font-size: 21px;
   text-decoration: none; 
 }
@@ -182,7 +184,7 @@ header {position: relative;
 
 /*Pantalla Pc*/
 @media screen and (min-width: 820px) {
-  .boton{border-radius: 10px 10px 10px 10px; 
+  .boton{border-radius: 10px; 
          font-size: 17px;    
         }
   .boton:hover{background-color: #ed62ff;
@@ -202,12 +204,23 @@ header {position: relative;
 .texto{margin-left: 12px;
        margin-right: 12px;
 }
+.comentariocentrado{text-align: center;
+
+}
 
 .imagentransparente{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 400px;
+}
+
+.imagenNOtransparente{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  border-radius: 10px;
 }
 
 /*Pantalla de Pc*/
@@ -220,5 +233,36 @@ header {position: relative;
 /*Pantalla de móvil*/
 @media screen and (max-width: 819px) {
   .imagentransparente{width: 60vw;}
+  .imagenNOtransparente{width: 60vw;
+                        border-radius: 20px;
+                       }
 }
 
+
+/*----------------------------------------------------------------------------------------------*/
+/*Footer*/
+
+footer {
+
+  background-color: rgb(23, 40, 70);
+  text-align: center;
+  color: white;
+  font-size: 19px;
+  border-radius: 10px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-left: 15%;
+  margin-right: 15%;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.486);
+  
+ }
+
+
+/*Pantalla móvil*/
+ @media screen and (max-width: 820px) {
+  footer {margin-left: 10px;
+                   margin-right: 10px;
+                   font-size: 21px;   
+                   border-radius: 20px;   
+                  }
+}
